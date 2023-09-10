@@ -20,7 +20,8 @@ Accomplished the design and development of a fully functional end-to-end AWS web
 - AWS Lambda
 - AWS DynamoDB
 - AWS IAM 
-![App Screenshot](![image](https://github.com/20a31a0538/AWS-Web-App/assets/110081197/1bcf7c8d-074d-48d3-98d1-7be844b68eed))
+![App Screenshot](![image](![image](https://github.com/20a31a0538/AWS-Web-App/assets/110081197/a37397c7-0b81-4e4e-b477-ee4c95bc6293)
+))
 ## Result
 
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
