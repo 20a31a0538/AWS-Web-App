@@ -34,7 +34,8 @@ Search for AWS Ampilfy. Click on Get started
 - 
 ## Step 2:
 - To do math  AWS Lambda : a bit code code that runs when we trigger(serverlessly).
-- sc
+- ![image](https://github.com/20a31a0538/AWS-Web-App/assets/110081197/db464121-04f0-48db-9af3-97172bbc3c79)
+
 - Lambda function with source code of power of numbers.
 - sc
 - Click on ctrl + s, then deploy.
