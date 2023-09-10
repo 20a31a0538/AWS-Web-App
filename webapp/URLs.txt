@@ -1,0 +1,4 @@
+API Gateway : https://hj8ywcpwo3.execute-api.ap-south-1.amazonaws.com/dev
+
+ARN : arn:aws:dynamodb:ap-south-1:039638597321:table/PowerOfNumberTable
+
