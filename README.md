@@ -8,7 +8,7 @@ Accomplished the design and development of a fully functional end-to-end AWS web
 
 - A way to create/host a webpage 
 - A way to invoke the math functionality.
-- A way to do the some math.
+- A way to do some math.
 - Somewhere to store the result of math.
 - A way to handle the permissions. 
 
@@ -20,20 +20,16 @@ Accomplished the design and development of a fully functional end-to-end AWS web
 - AWS Lambda
 - AWS DynamoDB
 - AWS IAM 
-![App Screenshot](![image](![image](https://github.com/20a31a0538/AWS-Web-App/assets/110081197/a37397c7-0b81-4e4e-b477-ee4c95bc6293)
-))
-## Result
+- ![image](https://github.com/20a31a0538/AWS-Web-App/assets/110081197/4c09d029-ea0f-4f1f-a832-9909c8d8dd33)
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+## Step 1: A way to create/host a web page  AWS Amplify
+- used to build and host a website. We will use the text editor to create an index.html file on my local machine.
+Search for AWS Amplify. Click on Get started
 
+- ![image](https://github.com/20a31a0538/AWS-Web-App/assets/110081197/82949d36-25fc-4b30-9f33-d3a08504ff9d)
 
-## Step 1:
-- A way to create/host a web page  AWS Amplify : used to build and host a website. And we will use text editor to create a index.html file in my local machine.
-Search for AWS Ampilfy. Click on Get started
-
-- 
-## Step 2:
-- To do math  AWS Lambda : a bit code code that runs when we trigger(serverlessly).
+## Step 2: To do math  AWS Lambda
+- To do math  AWS Lambda: a bit code code that runs when we trigger(serverlessly).
 - ![image](https://github.com/20a31a0538/AWS-Web-App/assets/110081197/db464121-04f0-48db-9af3-97172bbc3c79)
 
 - Lambda function with source code of power of numbers.
@@ -50,13 +46,13 @@ Now, test it
 - Open AWS API Gateway and build REST API.
 - ![image](https://github.com/20a31a0538/AWS-Web-App/assets/110081197/35bc7fb2-31e0-4c0a-9547-28cf7315736d)
 
-- Click on create API.
+- Click on Create API.
 - ![image](https://github.com/20a31a0538/AWS-Web-App/assets/110081197/da213d3c-c918-4792-bca3-7a96494afa60)
 
-- Now create a method called POST(user is sending data for two numbers).
+- Now create a method called POST(the user is sending data for two numbers).
 - ![image](https://github.com/20a31a0538/AWS-Web-App/assets/110081197/e946757d-4155-471a-8916-7d8a4be84ff0)
 
-- Click on tick mark.
+- Click on the tick mark.
 - ![image](https://github.com/20a31a0538/AWS-Web-App/assets/110081197/cbd566ba-3319-4b46-9250-179d9dc4a50e)
 
 - Integration type is lambda function.
@@ -68,7 +64,7 @@ Now, test it
 - Flow of integration:
 - ![image](https://github.com/20a31a0538/AWS-Web-App/assets/110081197/99c0899e-6a17-48df-b734-279cddf19765)
 
-- One more thing, we need to do is that Enable CORES() basically, it does to allows web app running in one origin or domain able to access resources on different origin or domain. My application running on one domain called amplify and other domain called lambda function.
+- One more thing, we need to do is Enable CORES() Basically, it allows web apps running in one origin or domain to access resources on different origins or domains. My application runs on one domain called amplify and another domain called lambda function.
 Click on post(actions) --> click Enable
 - ![image](https://github.com/20a31a0538/AWS-Web-App/assets/110081197/8a03a7f8-dd2d-44b4-965b-c333d6152964)
 
@@ -83,12 +79,11 @@ Now, test it out. Go to resources then POST then resources body.
 - ![image](https://github.com/20a31a0538/AWS-Web-App/assets/110081197/099d00d4-c04b-40db-bdfc-7381c7e41809)
 
 
-## Step 4:
-- To store the result at database
+## Step 4: To store the result in the database
 - ![image](https://github.com/20a31a0538/AWS-Web-App/assets/110081197/003b6701-f87d-416d-bef7-f1011c50f34f)
 
-- We are using dynamoDB which is NoSQL database.It is lighter than Relation Database. We need to setup schema etc.
-Use IAM  we need to give our lambda function  permission to write to a database.
+- We are using dynamoDB which is a NoSQL database. It is lighter than the Relation Database. We need to set up schema etc.
+Using IAM  we need to give our lambda function  permission to write to a database.
 Now, Create a DynamoDB Table :
 - ![image](https://github.com/20a31a0538/AWS-Web-App/assets/110081197/1b068f54-bfe5-4c92-91d7-8d9dd5bc2549)
 
@@ -112,15 +107,15 @@ Create policy:
 - Result:
 - ![image](https://github.com/20a31a0538/AWS-Web-App/assets/110081197/59b45e28-286a-43b8-ac9e-05326f043525)
 
-- Now, go to dynamoDB >> Explore table 
-Result was stored in dynamo DB
+- Now, go to dynamo DB >> Explore the table 
+The result was stored in dynamo DB
 - ![image](https://github.com/20a31a0538/AWS-Web-App/assets/110081197/5390fbba-ce51-4621-afa1-2e9107324daa)
 
 
 
 
-## Step 5:
-- Update the index.html(link the API URL)and deploy in the ampilfy
+## Step 5: Deployment
+- Update the index.html(link the API URL)and deploy in the amplify
 - Code:
 - ![image](https://github.com/20a31a0538/AWS-Web-App/assets/110081197/caa9f6f8-5537-44e7-8ee2-ea0a48480088)
 
